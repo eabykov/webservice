@@ -28,7 +28,7 @@ password: **secret**
     export FLASK_APP=webservice.py
     export FLASK_ENV=development
     echo "export FLASK_APP=webservice.py" >> ~/.bash_profile
-    echo "export FLASK_AENV=development" >> ~/.bash_profile
+    echo "export FLASK_ENV=development" >> ~/.bash_profile
 
 ## Commands for run Flask application on port 80 
     cd ~/webservice
