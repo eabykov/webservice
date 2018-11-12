@@ -11,18 +11,16 @@ password: **secret**
 ## Commands for deployment Flask application in Debian based Linux (Ubuntu)
 
     sudo apt update
-    sudo apt -y install python3 python3-venv python3-dev gcc
+    sudo apt -y install python3 python3-dev gcc
 
 ## Commands for deployment Flask application in RedHat based Linux (CentOS)
 
     sudo yum update
-    sudo yum -y install python3 python3-venv python3-devel gcc
+    sudo yum -y install python3 python3-devel gcc
 
 ## Commands for deployment Flask application
 
     cd ~/webservice
-    python3 -m venv venv
-    source venv/bin/activate
     pip install -U pip
     pip install -r requirements.txt
     export FLASK_APP=webservice.py
