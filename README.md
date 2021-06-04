@@ -9,7 +9,7 @@ cd webservice
 pip install -r requirements.txt
 export FLASK_APP=webservice.py
 export FLASK_ENV=development
-flask run
+flask run -p 5050
 ```
 - username: **admin**
 - password: **secret**
