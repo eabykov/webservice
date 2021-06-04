@@ -16,3 +16,8 @@ flask run -p 5050
 - password: `secret`
 
 > To enable Authentication again after success login clear the browser cache.
+
+3. Docker build and run
+```shell
+sudo docker build .
+```
