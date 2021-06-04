@@ -6,4 +6,5 @@ RUN ls -lah /tmp
 RUN cd /tmp && pip install -r requirements.txt
 ENV FLASK_APP="webservice.py"
 ENV FLASK_ENV="development"
-CMD ["cd /tmp && flask run -p 80"]
+WORKDIR /tmp
+CMD ["flask run -p 80"]
