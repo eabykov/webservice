@@ -1,4 +1,3 @@
-### Flask web server
 ```shell
 sudo docker build -t flask .
 sudo docker images
