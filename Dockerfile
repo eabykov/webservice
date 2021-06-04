@@ -6,4 +6,4 @@ RUN cd /tmp && pip install -r requirements.txt
 ENV FLASK_APP="webservice.py"
 ENV FLASK_ENV="development"
 WORKDIR /tmp
-ENTRYPOINT ["/usr/bin/python3", "-m", "flask", "run", "-p", "80"]
+ENTRYPOINT ["python3", "-m", "flask", "run", "-p", "80"]
