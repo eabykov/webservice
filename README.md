@@ -11,12 +11,7 @@ password: **secret**
 ## Commands for deployment Flask application in Debian based Linux (Ubuntu)
 
     sudo apt update
-    sudo apt -y install python3 python3-dev gcc
-
-## Commands for deployment Flask application in RedHat based Linux (CentOS)
-
-    sudo yum update
-    sudo yum -y install python3 python3-devel gcc
+    sudo apt -y install python3 python3-dev gcc python3-flask python3-pip
 
 ## Commands for deployment Flask application
 
