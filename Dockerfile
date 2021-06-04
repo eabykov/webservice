@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:20.04
 COPY . /tmp
 RUN apt update
 RUN apt -y install python3 python3-dev gcc python3-flask python3-pip
