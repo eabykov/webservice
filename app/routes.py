@@ -1,6 +1,5 @@
 from app import app
 import psutil
-from subprocess import Popen, PIPE
 from functools import wraps
 from flask import Flask, request, Response, render_template
 
@@ -29,10 +28,9 @@ def requires_auth(f):
 ospid = psutil.Process()
 cpuTimes = ospid.cpu_times()
 memoryUsage = ospid.memory_full_info()
-lastCommit = Popen(['git','log','--pretty=oneline','-n','1'],stdout=PIPE).communicate()
 
 @app.route('/')
 @app.route('/index')
 @requires_auth  #requires_auth decorator for basic auth
 def index():
-    return render_template('index.html', lastCommit=lastCommit,ospid=ospid, cpuTimes=cpuTimes, memoryUsage=memoryUsage)
+    return render_template('index.html', ospid=ospid, cpuTimes=cpuTimes, memoryUsage=memoryUsage)
