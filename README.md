@@ -21,15 +21,10 @@ password: **secret**
 ## Commands for deployment Flask application
 
     cd webservice
-    python3 -m venv venv
-    source venv/bin/activate
-    pip install -U pip
     pip install -r requirements.txt
     export FLASK_APP=webservice.py
     export FLASK_ENV=development
-    echo "export FLASK_APP=webservice.py" >> ~/.bash_profile
-    echo "export FLASK_ENV=development" >> ~/.bash_profile
 
 ## Commands for run Flask application on port 80 
     cd webservice
-    sudo /bin/python3 ./venv/bin/flask run --port=80
+    flask run run --port=80
