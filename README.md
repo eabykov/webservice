@@ -1,4 +1,4 @@
-### Deployment Flask application in Ubuntu
+### Deployment Flask application
 
 - username: `admin`
 - password: `secret`
