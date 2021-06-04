@@ -21,6 +21,8 @@ password: **secret**
 ## Commands for deployment Flask application
 
     cd webservice
+    python3 -m venv venv
+    source venv/bin/activate
     pip install -U pip
     pip install -r requirements.txt
     export FLASK_APP=webservice.py
