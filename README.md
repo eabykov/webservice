@@ -32,4 +32,4 @@ password: **secret**
 
 ## Commands for run Flask application on port 80 
     cd webservice
-    sudo /bin/python3 webservice/venv/bin/flask run --port=80
+    sudo /bin/python3 ./venv/bin/flask run --port=80
