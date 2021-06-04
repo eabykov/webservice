@@ -27,4 +27,4 @@ password: **secret**
 
 ## Commands for run Flask application on port 80 
     cd webservice
-    flask run -p 5050
+    flask run -p 5050 --with-threads
