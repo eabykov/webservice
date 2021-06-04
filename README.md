@@ -1,4 +1,4 @@
-## Commands for deployment Flask application in Debian based Linux (Ubuntu)
+## Commands for deployment Flask application in Ubuntu
 ```shell
 sudo apt update
 sudo apt -y install python3 python3-dev gcc python3-flask python3-pip
