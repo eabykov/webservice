@@ -19,4 +19,6 @@ flask run -p 5050
 3. Docker build and run
 ```shell
 sudo docker build .
+sudo docker images
+sudo docker run -it -p 8080:80 IMAGE_ID
 ```
