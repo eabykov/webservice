@@ -24,7 +24,4 @@ password: **secret**
     pip install -r requirements.txt
     export FLASK_APP=webservice.py
     export FLASK_ENV=development
-
-## Commands for run Flask application on port 80 
-    cd webservice
     flask run -p 5050 --with-threads
