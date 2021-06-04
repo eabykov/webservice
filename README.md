@@ -11,7 +11,7 @@ export FLASK_APP=webservice.py
 export FLASK_ENV=development
 flask run -p 5050
 ```
-- username: **admin**
-- password: **secret**
+- username: `admin`
+- password: `secret`
 
-**Note:** To enable Authentication again after success login clear the browser cache.
+> To enable Authentication again after success login clear the browser cache.
