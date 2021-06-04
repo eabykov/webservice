@@ -10,6 +10,6 @@ mccabe==0.6.1
 psutil==5.6.6
 pylint==2.1.1
 six==1.11.0
-Werkzeug==0.15.3
+Werkzeug==0.15.5
 wrapt==1.10.11
 typed-ast==1.4.1
