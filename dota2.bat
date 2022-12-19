@@ -1,16 +1,13 @@
- @ECHO OFF
+@ECHO OFF
 SETLOCAL
 SET "sourcedir=C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\panorama\videos\"
-SET "keepdir=heroes"
-
-FOR /d %%a IN ("%sourcedir%\*") DO IF /i NOT "%%~nxa"=="%keepdir%" RD /S /Q "%%a"
-FOR %%a IN ("%sourcedir%\*") DO IF /i NOT "%%~nxa"=="%keepfile%" DEL "%%a"
+FOR /d %%a IN ("%sourcedir%\*") DO RD /S /Q "%%a"
+FOR %%a IN ("%sourcedir%\*") DO DEL "%%a"
 
 SET "sourcedir=C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\maps\backgrounds\"
+FOR /d %%a IN ("%sourcedir%\*") DO RD /S /Q "%%a"
+FOR %%a IN ("%sourcedir%\*") DO DEL "%%a"
 
-FOR /d %%a IN ("%sourcedir%\*") DO IF /i NOT "%%~nxa"=="%keepdir%" RD /S /Q "%%a"
-FOR %%a IN ("%sourcedir%\*") DO IF /i NOT "%%~nxa"=="%keepfile%" DEL "%%a"
+START "" "C:\Program Files (x86)\Steam\steam.exe"
 
-START "" "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\bin\win64\dota2.exe" -novid -gamestateintegration
-
-GOTO :EOF 
+GOTO :EOF
