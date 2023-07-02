@@ -1,0 +1,15 @@
+docker-compose.yml
+compose.yml
+Dockerfile
+.docker
+.dockerignore
+.git
+.gitignore
+.gitattributes
+.github
+.gitignore
+*.md
+**/__pycache__/
+.Python
+.idea
+.vscode

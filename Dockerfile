@@ -1,13 +1,11 @@
-FROM ubuntu:22.04
-COPY . /tmp
-RUN apt update && apt install -y \
-        python3 \
-        python3-dev \
-        gcc \
-        python3-flask \
-        python3-pip
-RUN cd /tmp && pip install -r requirements.txt
-ENV FLASK_APP="webservice.py"
-ENV FLASK_ENV="development"
-WORKDIR /tmp
-ENTRYPOINT ["python3", "-m", "flask", "run", "-p", "80", "--host=0.0.0.0"]
+FROM python:3.11-alpine
+
+WORKDIR /opt/webservice
+
+COPY webservice templates
+COPY webservice.py requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt \
+    && rm -rfv requirements.txt
+
+ENTRYPOINT ["python3", "webservice.py"]
